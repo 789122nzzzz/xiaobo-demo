@@ -1,0 +1,38 @@
+plugins {
+身份证'com.android.application'
+身份证'org.jetbrains.kotlin.android'
+}
+
+安卓 {
+命名空间'com.example.xiaobo'
+编译34
+
+默认配置 {
+应用 Id"com.example.xiaobo"
+最低支持的 Sdk23
+目标 Sdk34
+版本代码1
+版本名称"1.2.3"
+    }
+
+构建类型 {
+释放{
+启用代码压缩虚假的
+proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+编译选项{
+源一致性_17
+targetCompatibility JavaVersion.VERSION_17
+    }
+
+kotlinOptions {
+jvmTarget ='17'
+    }
+}
+
+依赖项{
+实施'androidx.core:core-ktx:1.13.1'
+实施'androidx.appcompat:appcompat:1.7.0'
+}
