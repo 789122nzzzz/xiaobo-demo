@@ -1,0 +1,231 @@
+android:textColor="#FFFFFF" />
+<<按钮
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <android:textColor="#FFFFFF" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <按钮
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- 主页 -->
+            <ScrollView
+                android:id="@+id/pageHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小铂工具箱 Demo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_glass"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="版本 v1.2.3"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_glass"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="工作中"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_glass"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="开启悬浮窗"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <Switch
+                            android:id="@+id/switchFloat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </线性布局>
+                </文本视图>
+            </"功能">
+
+            线性布局
+            <按钮
+                android:id="@+id/pageFunc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="功能"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_glass"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <Button
+                            android:id="@+id/btnCore"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="小铂内核" />
+
+                        <TextView
+                            android:id="@+id/tvCoreStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未下载"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_glass"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <Button
+                            android:id="@+id/btnTheme"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="小铂美化" />
+
+                        <文本视图
+                            android:id="@+id/tvThemeStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未下载"
+                            android:textColor="#FFFFFF" />
+                    </线性布局>
+
+                    <线性布局
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_glass"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <按钮
+                            android:id="@+id/btnToolDownload"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=android:text=android:textColor="#FFFFFF" /> />
+
+                        <文本视图
+                            android:id="@+id/tvToolStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未下载"
+                            android:textColor="#FFFFFF" />
+                    </"未下载">
+                </线性布局>
+            </线性布局>
+
+滚动视图
+            <<!-- 工具 -->
+                android:id="@+id/pageTool"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <滚动视图
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <线性布局
+                        android:layout_width="wrap_content"
+文本视图
+按钮
+                        android:textColor="#FFFFFF"
+线性布局="24sp"
+线性布局android:textStyle="bold" />
+
+                    <滚动视图
+                        android:id="@+id/btnDriver1"
+"工具"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_button"
+开关
+线性布局
+
+文本视图线性布局
+android:textColor="#FFFFFF" />
+线性布局"未下载"
+线性布局
+"工作中"文本视图线性布局
+文本视图"小铂美化"
+"工具"滚动视图
+"功能">文本视图
+
+线性布局"未下载"<?<?xml version="1.0" encoding="utf-8"?>
+                        android:id="@+id/btnDriver3"
+"小铂刷刀"android:layout_width="match_parent
