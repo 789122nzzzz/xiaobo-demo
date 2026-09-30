@@ -1,0 +1,7 @@
+<?<?xml version="1.0" encoding="utf-8"?>>
+<形状 xmlns:android="http://schemas.android.com/apk/res/android">
+    <坡度
+        android:angle="270"
+        android:startColor="#0B1020"
+        android:endColor="#1B2A4A" />
+</形状>
