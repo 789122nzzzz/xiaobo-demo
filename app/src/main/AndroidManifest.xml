@@ -1,0 +1,33 @@
+<?<?xml version="1.0" encoding="utf-8"?>>
+<表明 xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <应用
+        android:allowBackup="true"
+        android:label=“小铂工具箱演示”
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        <活动
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <行动android:name="android.intent.action.MAIN"/>
+                <种类 android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </活动>
+
+        <服务
+            android:name=".FloatingService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <财产
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="floating_toolbox_demo" />
+        </服务>
+
+    </应用>
+</表明>
